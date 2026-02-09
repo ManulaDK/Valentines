@@ -111,9 +111,22 @@
       animation: pop .35s ease;
     }
 
+    /* GLOWING RESULT TEXT */
     .result h2 {
       font-size: clamp(30px, 4.5vw, 46px);
       margin: 10px 0;
+      color: #ff3b7a;
+      text-align: center;
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 8px #ff4d7d, 0 0 12px #ff4d7d;
+      }
+      to {
+        text-shadow: 0 0 20px #ff1f68, 0 0 30px #ff1f68;
+      }
     }
 
     .fireworks {
@@ -300,6 +313,3 @@
   </script>
 </body>
 </html>
-
-
-
